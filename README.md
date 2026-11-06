@@ -7,7 +7,7 @@
 ![轨道运动](shots/d_orbit.png)
 ![单摆](shots/d_pend.png)
 
-## 包含哪些模型
+## 包含的物理模型
 
 | 模型 | 文件 |
 |---|---|
@@ -22,9 +22,9 @@
 | 碰撞 | `src/models/collision.js` |
 | 速度选择器 | `src/models/velocity-matching.js` |
 
-## 快速开始
+## 开始
 
-**只看效果**：直接用浏览器打开 `dist/index.html`（单文件、离线可用）。
+**效果概览**：直接用浏览器打开 `dist/index.html`（单文件、离线可用）。
 
 **改代码**：
 
@@ -35,7 +35,7 @@ npm run build     # esbuild 打包 -> dist/app.js，再内联成 dist/index.html
 
 如果 `npm run build` 报错，多半是打包参数和原来的不一致：检查 `src/index.html` 里 `app.js` 的引入方式（`<script>` 还是 `<script type="module">`），据此调整 `package.json` 里的 `--format`。
 
-**跑测试**：
+**测试**：
 
 ```bash
 npm test              # 物理正确性测试（不需要浏览器）
@@ -59,7 +59,7 @@ DESIGN.md       设计文档
 
 ## 设计文档
 
-`DESIGN.md` 记录了这个项目的设计取舍：模型怎么抽象、参数怎么暴露、视觉风格怎么统一、哪些物理量必须可验证。比代码更值得先读。
+`DESIGN.md`记录了本项目的设计：抽象模型、参数暴露、视觉风格等等
 
 ## 质量保障
 
@@ -72,9 +72,9 @@ DESIGN.md       设计文档
 ## Roadmap
 
 - [ ] GitHub Actions：push 时自动跑 build + test
-- [ ] GitHub Pages：在线 demo
-- [ ] 每个模型补一张截图和一个 30 秒演示
+- [ ] GitHub Pages：在线demo
+- [ ] 每个模型一张截图和30秒演示
 
 ## 说明
 
-教学用途项目，非官方教材或考试依据。
+教学用。
